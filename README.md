@@ -7,4 +7,5 @@ This project focuses on improving the University of Texas System OTIS Help Desk 
 Refer to the white paper and the update log for full project functions.
 
 
-Authors: Ryan Tran, Kunal Biswas
+
+**Authors: Ryan Tran, Kunal Biswas**
