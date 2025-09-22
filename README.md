@@ -1,1 +1,1 @@
-# OTIS-Help-Desk-Training-Optimization-Project
+# OTIS Help Desk Training Optimization Project
