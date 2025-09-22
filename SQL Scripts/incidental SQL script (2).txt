@@ -1,0 +1,20 @@
+select md.Incident_Type, 
+md.Incident_ID, 
+md.Created_Date_Time,
+md.Resolve_By_Deadline_Calculated,
+md.Priority_Level, 
+md.Closed_Date_Time, 
+md.Category  
+ from ( select 
+ m.Incident_Type, 
+ m.Incident_ID, 
+ m.Created_Date_Time, 
+ m.Resolve_By_Deadline_Calculated, 
+ m.Priority_Level, 
+ m.Closed_Date_Time, 
+ m.Category
+from MasterFile m left join duplicates d on m.Incident_ID =  d.Incident_ID
+WHERE d.Incident_ID IS NULL) 
+AS  md left join 
+Incidental i on md.Incident_ID = i.Incident_ID
+where i.Incident_ID is NUll;
